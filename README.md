@@ -54,3 +54,28 @@ A Django-based e-commerce application with a REST API, JWT authentication, payme
 - Razorpay
 - JWT
 - Git/GitHub
+
+- ## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/dhruvguptafc/ShopSphere.git
+cd ShopSphere
+
+
+python -m venv env
+
+env\Scripts\activate
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver
+
+
+celery -A Ecommerce worker --loglevel=info --pool=solo
+
+
+**Don't copy:** `id="..."`, my explanations, or the ``` around this entire answer. The triple backticks shown *inside* the example are part of your README's Markdown.
