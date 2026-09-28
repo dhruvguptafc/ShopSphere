@@ -2,6 +2,11 @@
 
 A Django-based e-commerce application with a REST API, JWT authentication, payment integration, and asynchronous email processing.
 
+The REST API is documented using OpenAPI 3.0 and Swagger UI.
+### Swagger UI
+Run the project locally and visit:
+http://127.0.0.1:8000/swagger/
+
 ## Features
 
 ### E-commerce
@@ -26,7 +31,18 @@ A Django-based e-commerce application with a REST API, JWT authentication, payme
 - Serializer and business-logic validation
 - Database transactions for order creation
 - API and authentication/permission testing
+- ## API Documentation
 
+The REST API is documented using OpenAPI 3.0 and Swagger UI.
+
+### Swagger UI
+
+Run the project locally and visit:
+
+http://127.0.0.1:8000/swagger/
+### OpenAPI Schema
+
+http://127.0.0.1:8000/api/schema/
 ### Performance
 - Avoided N+1 query problems
 - Used `select_related()` and `prefetch_related()` where appropriate
@@ -78,4 +94,3 @@ python manage.py runserver
 celery -A Ecommerce worker --loglevel=info --pool=solo
 
 
-**Don't copy:** `id="..."`, my explanations, or the ``` around this entire answer. The triple backticks shown *inside* the example are part of your README's Markdown.
